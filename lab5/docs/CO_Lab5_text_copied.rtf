@@ -1,0 +1,80 @@
+# This is a rough copy (may have error)
+Computer Organization 
+Lab 5 - Advanced Pipelined CPU
+教授：蔡文錦
+TAs：單宇晟 吳年茵 曾偉杰
+Objectives
+In this lab, you are going to modify your lab 4 Pipelined CPU design, and implement hazard 
+detection and data forwarding.
+● Your design needs to forward data if instructions have data dependency.
+● Your design needs to stall pipelined CPU if it detects a load-use.
+● Implement the datapath of pipelined CPU as next page’s diagram
+Overview
+Attached Files
+● TO DO
+○ Adder.v
+○ ALU_Ctrl.v
+○ ALU.v
+○ Decoder.v
+○ MUX_2to1.v, MUX_3to1.v
+○ Pipe_CPU_Pro.v
+○ Shift_Left_Two_32.v
+○ Sign_Extend.v
+○ Forwarding_Unit.v
+○ Hazard_Detection.v
+● DO NOT modify
+○ Data_Memory.v
+○ Instruction_Memory.v 
+○ Pipe_Reg.v
+○ ProgramCounter.v
+○ Reg_File.v
+● For validation - DO NOT modify
+○ testbench.v 
+● Testcase - YOU CAN modify the instructions in it.
+○ *.txt 
+Instruction Set
+You are going to implement these instructions :
+● R-type : add, sub, AND, OR, NOR, slt
+● I-type  : lw, sw, beq, bne, addi
+Instruction Format: 
+Instruction Set
+R-type
+Function Op Field Function Field
+add 000000 100010
+sub 000000 100000
+AND 000000 100101
+OR 000000 100100
+NOR 000000 101010
+slt 000000 100111
+I-type
+Function Op Field
+addi 001000
+lw 101011
+sw 100011
+beq 000101
+bne 000100
+Compile & Run
+● Compile
+○ $ iverilog -o lab5 testbench.v 
+● Run
+○ $ ./lab5
+Wrong results:
+Correct results:
+Grading Policy
+● There are 3 little hidden cases with serial several instructions, and you will get 33 
+points for each correct testcase, with a bonus point awarded this semester for your hard 
+work, totally 100 points.
+● Any assignment work by fraud will get a zero point！ 
+● No late submissiion！
+Submission
+● Please attach student IDs as comments at the top of each TO DO file.
+● The files you should hand in include:
+○ all *.v files excluding testbench.v
+● Compress all file *.v into one zip file without any extra folder layer, and make sure 
+do not add unnecessary files or folders (like .DS_Store, __MACOSX).
+● Name your zip file as HW5_{studentID}.zip
+○ e.g.
+■  HW5_123456789.zip
+● {*.v}
+● EACH wrong format will have 20% penalty！(Multiple penalties are possible)
+● Deadline: 2025/6/15 23:55 (No late submission) 
