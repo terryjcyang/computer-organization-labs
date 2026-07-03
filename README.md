@@ -2,7 +2,7 @@
 
 This repository contains laboratory assignments for a Computer Organization course at NYCU (National Yang Ming Chiao Tung University). The labs progress from basic C programming to increasingly complex CPU implementations in Verilog.
 
-## 📚 Lab Overview
+## Lab Overview
 
 ### Lab 1: C Programming Fundamentals
 
@@ -143,13 +143,13 @@ iverilog -o pipe_cpu_pro testbench.v
 vvp pipe_cpu_pro
 ```
 
-## 🛠️ Tools Required
+## Tools Required
 
 - **C Compiler:** GCC or Clang (for Lab 1)
 - **Verilog Simulator:** Icarus Verilog (iverilog) or ModelSim (for Labs 2-5)
 - **Waveform Viewer:** GTKWave (optional, for viewing .vcd files)
 
-## 📁 Repository Structure
+## Repository Structure
 
 ```
 computer-organization-labs/
@@ -168,7 +168,7 @@ computer-organization-labs/
 └── Lab3_ref_ans/           # Reference solutions for Lab 3
 ```
 
-## 🚀 Getting Started
+## Getting Started
 
 ### For C Labs (Lab 1):
 
@@ -187,7 +187,7 @@ vvp output_name
 gtkwave *.vcd              # Optional: view waveforms
 ```
 
-## 📝 Course Context
+## Course Context
 
 These labs are part of a Computer Organization course that covers:
 
@@ -197,14 +197,14 @@ These labs are part of a Computer Organization course that covers:
 - Pipelining concepts and hazard handling
 - Memory hierarchies
 
-## ⚠️ Notes
+## Notes
 
 - Lab 3 has known issues and may not pass all test cases
 - Each lab includes a `hand_in_version/` directory containing the submitted implementation
 - Reference answers (`Lab2_ref_ans/`, `Lab3_ref_ans/`) are provided for comparison
 - Test cases are included in `testcase/` directories for verification
 
-## 📖 Learning Outcomes
+## Learning Outcomes
 
 By completing these labs, you will gain:
 
